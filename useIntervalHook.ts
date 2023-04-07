@@ -7,6 +7,9 @@ export function useIntervalHook() {
       setCount((count) => count + 1);
       console.log('1');
     }, 1000);
+    // return () => {
+    //   clearInterval(fn);
+    // };
   }, []);
 
   return count;
